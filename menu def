@@ -1,0 +1,52 @@
+def suma(a,b):
+    sumar=a+b
+    print(f"la suma resultante es: {sumar}")
+
+def resta(a,b):
+    restar=a-b
+    print(f"la resta resultante es: {restar}")
+
+def mul(a,b):
+    multi=a*b
+    print(f"la multiplicacion resultante es {multi}")
+
+def dividir(a,b):
+    division=a/b
+    print(f"la division resultante es {division}")
+
+
+def operaciones():
+    print("1.para sumar\n2.restar\n3.multiplicar\n4.dividir\n5.salir\n")
+
+    op=int(input("ingrese la opcion que desea: "))
+
+    while op!=5:
+
+        if op==1:
+            a=int(input("ingrese el primer numero: "))
+            b=int(input("ingrese el segundo numero: "))
+            suma(a,b)
+            op=int(input("ingrese la opcion que desea: "))
+        elif op==2:
+            a=int(input("ingrese el primer numero: "))
+            b=int(input("ingrese el segundo numero: "))
+            resta(a,b)
+            op=int(input("ingrese la opcion que desea: "))
+            
+        elif op==3:
+            a=int(input("ingrese el primer numero: "))
+            b=int(input("ingrese el segundo numero: "))
+            mul(a,b)
+            op=int(input("ingrese la opcion que desea: "))
+
+        elif op==4:
+            a=int(input("ingrese el dividendo: "))
+            b=int(input("ingrese el divisor: "))
+            dividir(a,b)
+            op=int(input("ingrese la opcion que desea: "))
+
+operaciones()
+
+
+
+
